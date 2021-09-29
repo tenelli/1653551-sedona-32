@@ -19,7 +19,7 @@
           </li>
         </ul>
       </nav>
-      <a class="logo header-logo">
+      <a class="logo header-logo" href="index.html">
         <img src="#" alt="Логотип сайта о городке Седона">
       </a>
       <ul class="user-list">
@@ -121,9 +121,9 @@
               </button>
             </fieldset>
             <button class="button sedona-decorative-btn" type="submit">Применить</button>
-            <input type="reset" value="Сбросить">
+            <button type="reset">Сбросить</button>
           </form>
-          <p>Найдено гостиниц: 38</p> <!--JS подсчитывать будет, или как?-->
+          <p>Найдено гостиниц: 38</p>
           <form class="sorting-type">
             <label for="sorting">Сортировка</label>
             <select id="sorting" name="sorting">
@@ -137,56 +137,64 @@
             <span>Показать карточки</span>
           </a>
           <a href="#">
-            <span>Неведомая кнопка</span>
+            <span>Показать галерею</span>
           </a>
           <a href="#">
             <span>Показать список</span>
           </a>
           <ul class="hotel-list">
             <li class="hotel-card">
-              <a class="hotel-card-link" href="#">
+              <a href="#">
                 <img class="hotel-card-image" src="#" alt="">
+              </a>
+              <a class="hotel-card-link" href="#">
                 <h3 class="hotel-card-title">Amara Resort & Spa</h3>
               </a>
               <span class="hotel-card-type">Гостиница</span>
               <span class="hotel-card-price">От 4000 &#8381;</span>
-              <!--Векторные 4 звезды-->
+              <span class="visually-hidden">4 звезды</span>
               <span class="hotel-card-rate">Рейтинг: 8,5</span> <br>
               <a href="#" class="sedona-decorative-btn">Подробнее</a>
               <a href="#" class="sedona-decorative-btn">В избранное</a>
             </li>
             <li class="hotel-card">
-              <a class="hotel-card-link" href="#">
+              <a href="#">
                 <img class="hotel-card-image" src="#" alt="">
+              </a>
+              <a class="hotel-card-link" href="#">
                 <h3 class="hotel-card-title">Desert Quail Inn</h3>
               </a>
               <span class="hotel-card-type">Мотель</span>
               <span class="hotel-card-price">От 3000 &#8381;</span>
-              <!--Векторные 3 звезды-->
+              <span class="visually-hidden">3 звезды</span>
               <span class="hotel-card-rate">Рейтинг: 8,9</span> <br>
               <a href="#" class="sedona-decorative-btn">Подробнее</a>
               <a href="#" class="sedona-decorative-btn">В избранное</a>
             </li>
             <li class="hotel-card">
-              <a class="hotel-card-link" href="#">
+              <a href="#">
                 <img class="hotel-card-image" src="#" alt="">
+              </a>
+              <a class="hotel-card-link" href="#">
                 <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
               </a>
               <span class="hotel-card-type">Апартаменты</span>
               <span class="hotel-card-price">От 2000 &#8381;</span>
-              <!--Векторные 2 звезды-->
+              <span class="visually-hidden">2 звезды</span>
               <span class="hotel-card-rate">Рейтинг: 9,2</span> <br>
               <a href="#" class="sedona-decorative-btn">Подробнее</a>
               <a href="#" class="sedona-decorative-btn selected-btn">В избранном</a>
             </li>
             <li class="hotel-card">
-              <a class="hotel-card-link" href="#">
+              <a href="#">
                 <img class="hotel-card-image" src="#" alt="">
+              </a>
+              <a class="hotel-card-link" href="#">
                 <h3 class="hotel-card-title">GreenTree Inn</h3>
               </a>
               <span class="hotel-card-type">Гостиница</span>
               <span class="hotel-card-price">От 3000 &#8381;</span>
-              <!--Векторные 2 звезды-->
+              <span class="visually-hidden">2 звезды</span>
               <span class="hotel-card-rate">Рейтинг: 9,2</span> <br>
               <a href="#" class="sedona-decorative-btn">Подробнее</a>
               <a href="#" class="sedona-decorative-btn">В избранное</a>
@@ -217,6 +225,8 @@
             <label for="sorting">Гостиниц на странице</label>
             <select id="sorting" name="sorting">
               <option value="4">4</option>
+              <option value="10">10</option>
+              <option value="20">20</option>
             </select>
             <button type="submit" class="visually-hidden">Выбрать количество отображаемых гостиниц</button>
           </form>
