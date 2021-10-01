@@ -1,0 +1,21 @@
+.subscribe-index {
+  background-image: url(../img/footer-background.jpg);
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 411px;
+}
+
+.first {
+  background-image: url(../img/first.png);
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 485px;
+}
+
+/*выглядит пока странновато*/
+.catalog-bg {
+  background-image: url(../img/catalog_background.jpg);
+  background-repeat: no-repeat;
+  width: auto;
+  height: auto;
+}
