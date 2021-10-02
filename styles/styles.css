@@ -1,3 +1,44 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/pt-sans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* формат woff в папке со шрифтами не наблюдаю, так поняла, что не нужно прописывать? */
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/pt-sans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.navigation-item, .catalog-filter-title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.navigation-item, .catalog-filter-item, .user-item, .hotel-card {
+  list-style: none;
+}
+
+.navigation-link, .user-link {
+  text-decoration: none;
+  color: #000000;
+}
+
 .subscribe-index {
   background-image: url(../img/footer-background.jpg);
   background-repeat: no-repeat;
@@ -18,4 +59,172 @@
   background-repeat: no-repeat;
   width: auto;
   height: auto;
+  color: #FFFFFF;
 }
+
+.page-header {
+  background-color: #FFFFFF;
+}
+
+
+.inner-page {
+  background-color: #E5E5E5;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.reasons, .suggestions {
+  font-size: 22px;
+  line-height: 36px;
+  color: #333333;
+  text-align: center;
+}
+
+.advantages-item {
+  list-style: none;
+  text-align: center;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-item-light {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-another {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-number, .advantages-description {
+  color: #333333;
+}
+
+.advantages-item-blue {
+  background-color: #83B3D3;
+}
+
+.advantages-white {
+  color: #FFFFFF;
+}
+
+.sedona-decorative-btn {
+  background-color: #756257;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.subscribe-button, .apply, .to-selected, .load {
+  background-color: #83B3D3;
+}
+
+.selected-btn {
+  background-color: #7DB54F;
+}
+
+.footer-contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer-social-list {
+  list-style: none;
+}
+
+.footer-social-item .button, .show {
+  text-decoration: none;
+}
+
+.inner-header-title {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs-item {
+  list-style: none;
+}
+
+.breadcrumbs-link {
+  color:#FFFFFF;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+}
+
+/*не знаю, как сюда опции прикрутить*/
+/*и как полю для почты фон задать */
+.catalog-filter-item, .catalog-filter-input, .sorting-type {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.hotels-found {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+}
+
+.hotel-card-link {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.reset {
+  color: #FFFFFF;
+}
+
+.hotel-card-rate {
+  background-color: #F2F2F2;
+}
+
+.hotel-card-rate, .hotel-card-type, .hotel-card-price, .sorting-type {
+  color: #333333;
+}
+
+.pagination-item {
+  list-style: none;
+}
+
+.pagination-link {
+  background-color: #83B3D3;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.pagination-current {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+
