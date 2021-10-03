@@ -6,8 +6,6 @@
   font-display: swap;
 }
 
-/* формат woff в папке со шрифтами не наблюдаю, так поняла, что не нужно прописывать? */
-
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -17,25 +15,42 @@
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 23px;
-  background-color: #FFFFFF;
+  background-color: #E5E5E5;;
   color: #000000;
 }
 
-.navigation-item, .catalog-filter-title {
+.navigation-item {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
 }
 
-.navigation-item, .catalog-filter-item, .user-item, .hotel-card {
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.clear-list {
   list-style: none;
 }
 
-.navigation-link, .user-link {
+.clear-underline {
   text-decoration: none;
+}
+
+.white-bg {
+  background-color: #FFFFFF;
+}
+
+.navigation-link {
+  color: #000000;
+}
+
+.user-link {
   color: #000000;
 }
 
@@ -62,15 +77,6 @@ body {
   color: #FFFFFF;
 }
 
-.page-header {
-  background-color: #FFFFFF;
-}
-
-
-.inner-page {
-  background-color: #E5E5E5;
-}
-
 .heading {
   font-size: 30px;
   font-weight: 700;
@@ -79,7 +85,14 @@ body {
   text-align: center;
 }
 
-.reasons, .suggestions {
+.reasons {
+  font-size: 22px;
+  line-height: 36px;
+  color: #333333;
+  text-align: center;
+}
+
+.suggestions {
   font-size: 22px;
   line-height: 36px;
   color: #333333;
@@ -106,10 +119,6 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-number, .advantages-description {
-  color: #333333;
-}
-
 .advantages-item-blue {
   background-color: #83B3D3;
 }
@@ -129,7 +138,7 @@ body {
   color: #FFFFFF;
 }
 
-.subscribe-button, .apply, .to-selected, .load {
+.blue-btn {
   background-color: #83B3D3;
 }
 
@@ -145,11 +154,7 @@ body {
   color: #000000;
 }
 
-.footer-social-list {
-  list-style: none;
-}
-
-.footer-social-item .button, .show {
+.button {
   text-decoration: none;
 }
 
@@ -165,18 +170,27 @@ body {
 }
 
 .breadcrumbs-link {
-  color:#FFFFFF;
+  color: #FFFFFF;
 }
 
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
-  text-decoration: none;
 }
 
 /*не знаю, как сюда опции прикрутить*/
 /*и как полю для почты фон задать */
-.catalog-filter-item, .catalog-filter-input, .sorting-type {
+.catalog-filter-item {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.catalog-filter-input {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.sorting-type {
   font-size: 18px;
   line-height: 24px;
 }
@@ -189,7 +203,6 @@ body {
 }
 
 .hotel-card-link {
-  text-decoration: none;
   color: #000000;
   font-weight: 700;
   font-size: 24px;
@@ -204,18 +217,13 @@ body {
   background-color: #F2F2F2;
 }
 
-.hotel-card-rate, .hotel-card-type, .hotel-card-price, .sorting-type {
+.dark-text {
   color: #333333;
-}
-
-.pagination-item {
-  list-style: none;
 }
 
 .pagination-link {
   background-color: #83B3D3;
   color: #FFFFFF;
-  text-decoration: none;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
