@@ -18,7 +18,7 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 23px;
-  background-color: #E5E5E5;;
+  background-color: #E5E5E5;
   color: #000000;
 }
 
@@ -68,13 +68,15 @@ body {
   height: 485px;
 }
 
-/*выглядит пока странновато*/
 .catalog-bg {
   background-image: url(../img/catalog_background.jpg);
   background-repeat: no-repeat;
-  width: auto;
-  height: auto;
   color: #FFFFFF;
+}
+
+/*вот этому полю хотела цвет задать макетный, да*/
+.subscribe-form input {
+  background-color: #F2F2F2;
 }
 
 .heading {
@@ -178,8 +180,6 @@ body {
   line-height: 21px;
 }
 
-/*не знаю, как сюда опции прикрутить*/
-/*и как полю для почты фон задать */
 .catalog-filter-item {
   font-size: 18px;
   line-height: 24px;
