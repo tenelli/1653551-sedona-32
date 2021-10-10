@@ -19,25 +19,37 @@ html {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 23px;
   background-color: #E5E5E5;
   color: #000000;
+  min-height: 100%;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.clear-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-container {
   flex-grow: 1;
-}
-
-.header-div {
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .navigation-list {
@@ -45,16 +57,24 @@ body {
   margin-left: 71px;
 }
 
-.page-container {
-  width: 1200;
-  margin: 0 auto;
+.user-list {
+  display: flex;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-right: 72px;
+}
+
+.page-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 72px 30px 72px;
 }
 
 .navigation-item {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
-  margin-right: 33px;
 }
 
 .catalog-filter-title {
@@ -63,26 +83,16 @@ body {
   font-weight: 700;
 }
 
-.clear-list {
-  list-style: none;
-}
-
 .clear-underline {
   text-decoration: none;
 }
 
-.white-bg {
-  background-color: #FFFFFF;
-}
-
 .navigation-link {
+  display: block;
+  padding-top: 19px;
+  padding-bottom: 20px;
+  margin-right: 33px;
   color: #000000;
-}
-
-.user-list {
-  display: flex;
-  margin-left: auto;
-  margin-right: 72px;
 }
 
 .user-link {
@@ -90,38 +100,42 @@ body {
   margin-right: 33px;
 }
 
-
-.subscribe-index {
+.subscribe {
   display: flex;
   flex-direction: column;
-  width: 1200px;
-  margin: 0 auto;
-  justify-content: center;
   align-items: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.subscribe-index {
   background-image: url(../img/footer-background.jpg);
   background-repeat: no-repeat;
-  height: 411px;
 }
 
 .first {
   background-image: url(../img/index_background.jpg);
   background-repeat: no-repeat;
-  width: 1200px;
-  height: 485px;
+  padding-top: 51px;
+  padding-bottom: 83px;
+}
+
+.welcome {
+  display: block;
   margin: 0 auto;
 }
 
 .header-logo {
-  margin-left: auto;
+  position: absolute;
+  left: 44%;
+  top: 0%;
 }
 
 .catalog-bg {
   background-image: url(../img/catalog_background.jpg);
   background-repeat: no-repeat;
-  color: #FFFFFF;
 }
 
-/*вот этому полю хотела цвет задать макетный, да*/
 .subscribe-form input {
   background-color: #F2F2F2;
 }
@@ -132,6 +146,17 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+}
+
+.city {
+  padding-top: 63px;
+  padding-bottom: 23px;
+}
+
+.interest {
+  padding-top: 91px;
+  padding-bottom: 30px;
 }
 
 .reasons {
@@ -139,6 +164,8 @@ body {
   line-height: 36px;
   color: #333333;
   text-align: center;
+  margin: 0;
+  margin-bottom: 79px;
 }
 
 .suggestions {
@@ -146,35 +173,21 @@ body {
   line-height: 36px;
   color: #333333;
   text-align: center;
+  margin: 0;
 }
 
-.advantages {
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
-}
+/*Паддинги у преимуществ дополнительно поправлю на моменте добавления иконок в эти блоки, потому как сейчас так или иначе смотрится криво*/
 
 .advantages-list {
   display: flex;
-  margin: 0;
-  padding: 0;
   flex-wrap: wrap;
 }
 
 .advantages-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
   text-align: center;
   width: 400px;
-  height: 384px;
-}
-
-.advantages-item-photo {
-  display: flex;
-  flex-grow: 1;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .advantages-title {
@@ -182,6 +195,13 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+.advantages-description {
+  margin: 0;
+  padding-bottom: 77px;
 }
 
 .advantages-item-light {
@@ -193,6 +213,8 @@ body {
 }
 
 .advantages-item-blue {
+  width: 100%;
+  display: flex;
   background-color: #83B3D3;
 }
 
@@ -233,6 +255,15 @@ body {
 .selected-btn {
   background-color: #7DB54F;
 }
+
+.footer-social-list {
+  display: flex;
+}
+
+.footer-social-item {
+  padding-right: 29px;
+}
+
 
 .footer-contacts-phone {
   font-size: 40px;
@@ -281,21 +312,14 @@ body {
   line-height: 24px;
 }
 
-.hotel-search {
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
-  flex-direction: column;
-}
-
 .search-btn {
   display: flex;
   width: 576px;
-  height: 60px;
-  margin-left: 312px;
-  margin-right: 313px;
+  margin: 73px 313px 91px 312px;
   justify-content: center;
   align-items: center;
+  padding-top: 13px;
+  padding-bottom: 17px;
 }
 
 .hotels-found {
@@ -324,6 +348,11 @@ body {
   color: #333333;
 }
 
+.advantages-number {
+  display: block;
+  padding-bottom: 26px;
+}
+
 .pagination-link {
   background-color: #83B3D3;
   color: #FFFFFF;
@@ -338,28 +367,4 @@ body {
   color: #000000;
 }
 
-.footer-container {
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
-  justify-content: space-between;
-}
 
-.footer-social-list {
-  display: flex;
-  margin-left: 72px;
-}
-
-.footer-social-item {
-  margin-right: 29px;
-}
-
-.footer-contacts {
-  display: flex;
-  margin: 0 auto;
-}
-
-.footer-about {
-  display: flex;
-  margin-right: 45px;
-}
