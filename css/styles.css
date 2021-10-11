@@ -159,9 +159,9 @@ body {
   margin: 0;
 }
 
-.city {
-  padding-top: 63px;
-  padding-bottom: 23px;
+.town {
+  margin-top: 63px;
+  margin-bottom: 23px;
 }
 
 .hotel-search {
@@ -170,7 +170,7 @@ body {
 }
 
 .interest {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .reasons {
