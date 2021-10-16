@@ -89,20 +89,34 @@ body {
 
 .catalog-filter {
   display: flex;
-  margin-top: 45px;
+}
+
+.catalog-filter-group {
+  width: 150px;
+}
+
+.price-field {
+  width: 550px;
+}
+
+.dwelling span {
+  color: #FFFFFF;
+}
+
+.infrastructure span {
+  color: #FFFFFF;
 }
 
 .form-btn {
   display: flex;
   flex-direction: column;
-  margin-left: 81px;
 }
 
 .display-hotels {
   display: flex;
-  padding: 50px 72px 40px 72px;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 76px;
 }
 
 .show {
@@ -170,7 +184,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   margin: 0;
-  padding: 35px 72px 86px 71px;
+  padding: 35px 72px 85px 71px;
   background-image: url(../img/catalog_background.jpg);
   background-repeat: no-repeat;
 }
@@ -306,6 +320,7 @@ body {
   padding-bottom: 10px;
 }
 
+
 .catalog-btn {
   width: 160px;
 }
@@ -348,11 +363,14 @@ body {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  display: inline;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
 }
 
 .breadcrumbs {
   display: flex;
+  margin-bottom: 45px;
 }
 
 .breadcrumbs-item {
@@ -386,7 +404,7 @@ body {
 
 .load {
   width: 625px;
-  margin-top: 31px;
+  margin-bottom: 61px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -412,6 +430,11 @@ body {
   margin-right: 190px;
 }
 
+.hotel-card {
+  display: flex;
+  margin-bottom: 61px;
+}
+
 .hotel-card-link {
   color: #000000;
   font-weight: 700;
@@ -421,32 +444,42 @@ body {
 
 .hotel-card-title {
   margin: 0;
-  padding: 0;
-}
-
-.hotel-card {
-  display: flex;
-  padding: 32px 72px 30px 72px;
 }
 
 .hotel-info {
-  display: flex;
-  flex-direction: column;
   margin-left: 36px;
 }
 
-.rate {
+.name-and-stars {
   display: flex;
-  flex-direction: column;
-  margin-left: auto;
+  justify-content: space-between;
 }
 
-.card-span {
-  margin-bottom: 31px; /*не уверена, как расположить цену над кнопкой*/
+.card-main {
+  display: flex;
 }
 
-.card-btn {
-  display: flex;
+.card-left {
+  display: block;
+  margin-right: 8px;
+}
+
+.card-right {
+  display: block;
+}
+
+.hotel-card-type {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 29px;
+}
+
+.hotel-card-price {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 29px;
 }
 
 .reset {
@@ -460,7 +493,16 @@ body {
   padding-top: 9px;
   padding-bottom: 10px;
   text-align: center;
-  margin-top: 55px;
+  margin-top: auto;
+}
+
+.rate {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+.stars {
+  text-align: center  ;
 }
 
 .dark-text {
@@ -469,44 +511,48 @@ body {
 
 .bottom-catalog {
   display: flex;
-  padding: 61px 72px 89px 72px;
+  align-items: baseline;
 }
 
-.pagination {
-  display: flex;
-}
-
-.number-text {
-  margin-right: 51px;
+.sedona-dwelling {
+  padding: 50px 72px 89px 72px;
 }
 
 .number-of-hotels {
   margin-left: auto;
 }
 
-.pagination-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 55px;
-  height: 55px;
-  background-color: #83B3D3;
-  margin-right: 7px;
+.number-text {
+  display: inline-block;
+  margin-right: 51px;
+  color:#333333;
 }
 
+.pagination {
+  display: flex;
+}
+
+
 .pagination-link {
+  display: block;
+  width: 55px;
+  background-color: #83B3D3;
   color: #FFFFFF;
+  text-align: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 7px;
 }
 
-.pagination-current {
+/*цвета с макета нормально не захватились, так понимаю, что эти*/
+.current {
   background-color: #F2F2F2;
-}
-
-.pagination-current-link {
   color: #000000;
 }
 
-
+.subscribe-catalog {
+  margin-top: 0;
+}
