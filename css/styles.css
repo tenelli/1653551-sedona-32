@@ -320,17 +320,19 @@ body {
   padding-bottom: 10px;
 }
 
-
 .catalog-btn {
   width: 160px;
 }
 
-.catalog-btn:first-of-type {
-  margin-right: 8px;
-}
-
 .blue-btn {
   background-color: #83B3D3;
+}
+
+.blue-btn-link {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 .selected-btn {
@@ -344,7 +346,6 @@ body {
 .footer-social-item {
   padding-right: 29px;
 }
-
 
 .footer-contacts-phone {
   font-size: 40px;
@@ -380,9 +381,6 @@ body {
 
 .breadcrumbs-link {
   color: #FFFFFF;
-}
-
-.breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
 }
@@ -448,11 +446,6 @@ body {
 
 .hotel-info {
   margin-left: 36px;
-}
-
-.name-and-stars {
-  display: flex;
-  justify-content: space-between;
 }
 
 .card-main {
@@ -532,6 +525,9 @@ body {
   display: flex;
 }
 
+.pagination-item {
+  margin-right: 7px;
+}
 
 .pagination-link {
   display: block;
@@ -544,7 +540,6 @@ body {
   line-height: 26px;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-right: 7px;
 }
 
 /*цвета с макета нормально не захватились, так понимаю, что эти*/
