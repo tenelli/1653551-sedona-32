@@ -85,6 +85,7 @@ body {
   line-height: 26px;
   font-weight: 700;
   color: #FFFFFF;
+  margin-bottom: 30px;
 }
 
 .catalog-filter {
@@ -96,7 +97,8 @@ body {
 }
 
 .price-field {
-  width: 550px;
+  width: 287px;
+  display: flex;
 }
 
 .dwelling span {
@@ -105,11 +107,6 @@ body {
 
 .infrastructure span {
   color: #FFFFFF;
-}
-
-.form-btn {
-  display: flex;
-  flex-direction: column;
 }
 
 .display-hotels {
@@ -477,6 +474,7 @@ body {
 
 .reset {
   color: #FFFFFF;
+  margin-left: auto;
 }
 
 .hotel-card-rate {
@@ -550,4 +548,41 @@ body {
 
 .subscribe-catalog {
   margin-top: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.price-block {
+  width: 143px;
+}
+
+.price-field {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.infrastructure-field {
+  margin-right: 67px;
+}
+
+.price-sorting {
+  display: flex;
+}
+
+.apply {
+  margin-left: 81px;
+}
+
+.toggles {
+  display: flex;
 }

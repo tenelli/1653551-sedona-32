@@ -58,7 +58,7 @@
             </li>
           </ul>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <h2 class="visually-hidden" hidden>Фильтрация каталога</h2>
+            <h2 class="visually-hidden">Фильтрация каталога</h2>
             <fieldset class="catalog-filter-group infrastructure-field">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list clear-list">
@@ -107,45 +107,49 @@
             </fieldset>
             <fieldset class="catalog-filter-group price-field">
               <legend class="catalog-filter-title">Стоимость, &#8381;:</legend>
-              <label class="catalog-filter-label">
-                <input class="catalog-filter-input price-block" type="number" name="min-price" placeholder="0">от
-              </label>
-              <label class="catalog-filter-label">
-                <input class="catalog-filter-input price-block" type="number" name="max-price" placeholder="9000">до
-              </label>
-              <button class="range-toggle toggle-min" type="button">
-                <span class="visually-hidden" hidden>Изменить минимальную цену.</span>
-              </button>
-              <button class="range-toggle toggle-max" type="button">
-                <span class="visually-hidden" hidden> Изменить максимальную цену.</span>
-              </button>
+              <div>
+                <div class="price-sorting">
+                  <label class="catalog-filter-label">
+                    <input class="catalog-filter-input price-block" type="number" name="min-price" placeholder="0">
+                  </label>
+                  <label class="catalog-filter-label">
+                    <input class="catalog-filter-input price-block" type="number" name="max-price" placeholder="9000">
+                  </label>
+                  <button class="button sedona-decorative-btn apply blue-btn" type="submit">Применить</button>
+                </div>
+              </div>
+              <div class="toggles">
+                <button class="range-toggle toggle-min" type="button">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button class="range-toggle toggle-max" type="button">
+                  <span class="visually-hidden"> Изменить максимальную цену.</span>
+                </button>
+                <button class="reset" type="reset">Сбросить</button>
+              </div>
             </fieldset>
-            <div class="form-btn">
-              <button class="button sedona-decorative-btn apply blue-btn" type="submit">Применить</button>
-              <button  class="reset" type="reset">Сбросить</button>
-            </div>
           </form>
         </div>
         <section class="sedona-dwelling">
           <div class="display-hotels">
             <p class="hotels-found">Найдено гостиниц: 38</p>
             <form class="sorting-type dark-text">
-              <label for="sorting" hidden>Сортировка</label>
+              <label for="sorting" class="visually-hidden">Сортировка</label>
               <select id="sorting" name="sorting">
                 <option value="cheap">Сначала дешёвые</option>
                 <option value="expensive">Сначала дорогие</option>
                 <option value="popular">Сначала популярные</option>
               </select>
-              <button type="submit" hidden>Отсортировать гостиницы</button>
+              <button type="submit" class="visually-hidden">Отсортировать гостиницы</button>
             </form>
             <a href="#" class="show clear-underline">
-              <span hidden>Показать карточки</span>
+              <span class="visually-hidden">Показать карточки</span>
             </a>
             <a href="#" class="show clear-underline">
-              <span hidden>Показать галерею</span>
+              <span class="visually-hidden">Показать галерею</span>
             </a>
             <a href="#" class="show clear-underline">
-              <span hidden>Показать список</span>
+              <span class="visually-hidden">Показать список</span>
             </a>
           </div>
           <ul class="hotel-list clear-list">
@@ -277,7 +281,7 @@
                 <option value="10">10</option>
                 <option value="20">20</option>
               </select>
-              <button type="submit" class="visually-hidden" hidden>Выбрать количество отображаемых гостиниц</button>
+              <button type="submit" class="visually-hidden">Выбрать количество отображаемых гостиниц</button>
             </form>
           </div>
         </section>
@@ -296,7 +300,7 @@
       </main>
       <footer class="page-footer">
         <section class="footer-social">
-          <h2 class="visually-hidden" hidden>Давайте дружить</h2>
+          <h2 class="visually-hidden">Давайте дружить</h2>
           <ul class="footer-social-list clear-list">
             <li class="footer-social-item clear-list">
               <a class="button" href="https://twitter.com/htmlacademy_ru">
@@ -316,11 +320,11 @@
           </ul>
         </section>
         <section class="footer-contacts">
-          <h2 class="visually-hidden" hidden>Контакты</h2>
+          <h2 class="visually-hidden">Контакты</h2>
           <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </section>
         <section class="footer-about">
-          <h2 class="visually-hidden" hidden>Сделано Html academy</h2>
+          <h2 class="visually-hidden">Сделано Html academy</h2>
           <a href="class="htmlacademy-link" href="https://htmlacademy.ru/">.html<br>academy</a>
         </section>
       </footer>
