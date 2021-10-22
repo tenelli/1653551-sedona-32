@@ -1,10 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="css/styles.css">
-  </head>
+    <base href="https://htmlacademy-htmlcss.github.io/1653551-sedona-32/8/">
+</head>
   <body>
     <div class="container">
       <header class="page-header">
@@ -27,14 +29,14 @@
         <ul class="user-list clear-list">
             <li class="user-item">
               <a class="user-link clear-underline" href="#">
-                <span class="visually-hidden">
+                <span> <!-- class="visually-hidden"-->
                   Поиск
                 </span>
               </a>
             </li>
             <li class="user-item">
               <a class="user-link clear-underline" href="#">
-                <span class="visually-hidden">
+                <span> <!-- class="visually-hidden"-->
                   Избранное
                 </span>
               </a>
@@ -107,16 +109,13 @@
             </fieldset>
             <fieldset class="catalog-filter-group price-field">
               <legend class="catalog-filter-title">Стоимость, &#8381;:</legend>
-              <div>
-                <div class="price-sorting">
-                  <label class="catalog-filter-label">
-                    <input class="catalog-filter-input price-block" type="number" name="min-price" placeholder="0">
-                  </label>
-                  <label class="catalog-filter-label">
-                    <input class="catalog-filter-input price-block" type="number" name="max-price" placeholder="9000">
-                  </label>
-                  <button class="button sedona-decorative-btn apply blue-btn" type="submit">Применить</button>
-                </div>
+              <div class="price-sorting">
+                <label class="catalog-filter-label">
+                  <input class="catalog-filter-input price-block" type="number" name="min-price" placeholder="0">
+                </label>
+                <label class="catalog-filter-label">
+                  <input class="catalog-filter-input price-block" type="number" name="max-price" placeholder="9000">
+                </label>
               </div>
               <div class="toggles">
                 <button class="range-toggle toggle-min" type="button">
@@ -125,9 +124,12 @@
                 <button class="range-toggle toggle-max" type="button">
                   <span class="visually-hidden"> Изменить максимальную цену.</span>
                 </button>
-                <button class="reset" type="reset">Сбросить</button>
               </div>
             </fieldset>
+            <div class="form-btns">
+              <button class="button sedona-decorative-btn apply blue-btn" type="submit">Применить</button>
+              <button class="reset" type="reset">Сбросить</button>
+            </div>
           </form>
         </div>
         <section class="sedona-dwelling">
@@ -143,13 +145,13 @@
               <button type="submit" class="visually-hidden">Отсортировать гостиницы</button>
             </form>
             <a href="#" class="show clear-underline">
-              <span class="visually-hidden">Показать карточки</span>
+              <span>Показать карточки</span> <!-- class="visually-hidden"-->
             </a>
             <a href="#" class="show clear-underline">
-              <span class="visually-hidden">Показать галерею</span>
+              <span>Показать галерею</span> <!-- class="visually-hidden"-->
             </a>
             <a href="#" class="show clear-underline">
-              <span class="visually-hidden">Показать список</span>
+              <span>Показать список</span> <!-- class="visually-hidden"-->
             </a>
           </div>
           <ul class="hotel-list clear-list">
@@ -173,7 +175,7 @@
                 </div>
               </div>
               <div class="rate">
-                <span class="visually-hidden stars">4 звезды</span>
+                <span class="stars">4 звезды</span> <!-- class="visually-hidden"-->
                 <span class="hotel-card-rate dark-text">Рейтинг: 8,5</span>
               </div>
             </li>
@@ -197,7 +199,7 @@
                 </div>
               </div>
               <div class="rate">
-                <span class="visually-hidden stars">3 звезды</span>
+                <span class="stars">3 звезды</span> <!-- class="visually-hidden"-->
                 <span class="hotel-card-rate dark-text">Рейтинг: 8,9</span>
               </div>
             </li>
@@ -221,7 +223,7 @@
                 </div>
               </div>
               <div class="rate">
-                <span class="visually-hidden stars">2 звезды</span>
+                <span class="stars">2 звезды</span> <!-- class="visually-hidden"-->
                 <span class="hotel-card-rate dark-text">Рейтинг: 9,2</span>
               </div>
             </li>
@@ -245,7 +247,7 @@
                 </div>
               </div>
               <div class="rate">
-                <span class="visually-hidden stars">2 звезды</span>
+                <span class="stars">2 звезды</span> <!-- class="visually-hidden"-->
                 <span class="hotel-card-rate dark-text">Рейтинг: 9,2</span>
               </div>
             </li>
@@ -275,7 +277,7 @@
               </li>
             </ul>
             <form class="sorting-type dark-text number-of-hotels">
-              <label for="sorting" class="number-text">Гостинниц на странице</label>
+              <label for="sorting" class="number-text">Гостиниц на странице</label>
               <select id="sorting" name="sorting">
                 <option value="4">4</option>
                 <option value="10">10</option>
@@ -304,24 +306,24 @@
           <ul class="footer-social-list clear-list">
             <li class="footer-social-item clear-list">
               <a class="button" href="https://twitter.com/htmlacademy_ru">
-                <span class="visually-hidden">Твиттер</span>
+                <span>Твиттер</span> <!-- class="visually-hidden"-->
               </a>
             </li>
             <li class="footer-social-item clear-list">
               <a class="button" href="https://www.facebook.com/htmlacademy">
-                <span class="visually-hidden">Фэйсбук</span>
+                <span>Фэйсбук</span> <!-- class="visually-hidden"-->
               </a>
             </li>
             <li class="footer-social-item clear-list">
               <a class="button" href="https://youtube.com/c/HTMLAcademyRUS">
-                <span class="visually-hidden">Ютуб</span>
+                <span>Ютуб</span> <!-- class="visually-hidden"-->
               </a>
             </li>
           </ul>
         </section>
         <section class="footer-contacts">
           <h2 class="visually-hidden">Контакты</h2>
-          <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </section>
         <section class="footer-about">
           <h2 class="visually-hidden">Сделано Html academy</h2>

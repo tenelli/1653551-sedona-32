@@ -96,11 +96,6 @@ body {
   width: 150px;
 }
 
-.price-field {
-  width: 287px;
-  display: flex;
-}
-
 .dwelling span {
   color: #FFFFFF;
 }
@@ -565,12 +560,6 @@ body {
   width: 143px;
 }
 
-.price-field {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-}
-
 .infrastructure-field {
   margin-right: 67px;
 }
@@ -579,10 +568,21 @@ body {
   display: flex;
 }
 
-.apply {
+.form-btns {
   margin-left: 81px;
 }
 
-.toggles {
-  display: flex;
+/*тут пока пиксели на глаз, потому как в фигме что-то странное*/
+.apply {
+  margin-top: 60px;
+}
+
+.reset {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.price-field {
+  margin-left: auto;
 }
