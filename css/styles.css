@@ -226,17 +226,56 @@ body {
 }
 
 /*Паддинги у преимуществ дополнительно поправлю на моменте добавления иконок в эти блоки, потому как сейчас так или иначе смотрится криво*/
-
 .advantages-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+}
+
+.big-1 {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+.little-1 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.little-2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.little-3 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.big-2 {
+  grid-column: 1/4;
+  grid-row: 3/4;
+}
+
+.little-4 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+.little-5 {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+.little-6 {
+  grid-column: 3/4;
+  grid-row: 4/5;
 }
 
 .advantages-item {
   text-align: center;
   width: 400px;
   padding-top: 90px;
-  padding-bottom: 90px;
+  padding-bottom: 77px;
 }
 
 .advantages-title {
@@ -245,12 +284,26 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
-.advantages-description {
+.advantages-number {
+  margin-bottom: 26px;
+}
+
+/*временная мера для выставления отступов по макету*/
+.alt {
   margin: 0;
-  margin-top: 40px;
+  margin-bottom: 23px;
+}
+
+.advantages-title-alt {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .advantages-item-light {
