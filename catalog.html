@@ -1,11 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="css/styles.css">
-    <base href="https://htmlacademy-htmlcss.github.io/1653551-sedona-32/8/">
 </head>
   <body>
     <div class="container">
@@ -18,7 +16,7 @@
             <li class="navigation-item">
               <a class="navigation-link clear-underline" href="#">О Седоне</a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item current-page">
               <a class="navigation-link navigation-link-current clear-underline">Гостиницы</a> <!--Каталог-->
             </li>
           </ul>
@@ -27,25 +25,31 @@
           <img src="img/logo.svg" alt="Логотип сайта о городке Седона">
         </a>
         <ul class="user-list clear-list">
-            <li class="user-item">
-              <a class="user-link clear-underline" href="#">
-                <span> <!-- class="visually-hidden"-->
-                  Поиск
-                </span>
-              </a>
-            </li>
-            <li class="user-item">
-              <a class="user-link clear-underline" href="#">
-                <span> <!-- class="visually-hidden"-->
-                  Избранное
-                </span>
-              </a>
-            </li>
-            <li class="user-item">
-              <a href="#" class="sedona-decorative-btn user-link clear-underline">
-                Хочу сюда
-              </a>
-            </li>
+          <li class="user-item">
+            <a class="user-link clear-underline" href="#">
+              <svg aria-hidden="true" focusable="false" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="m19.5 18-3.7-3.67a8 8 0 0 0 1.7-4.87 8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z" fill="#000"/>
+              </svg>
+              <span class="visually-hidden">
+                Поиск
+              </span>
+            </a>
+          </li>
+          <li class="user-item">
+            <a class="user-link clear-underline" href="#">
+              <svg aria-hidden="true" focusable="false" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.9 19a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" fill="#000"/>
+              </svg>
+              <span class="visually-hidden">
+                Избранное
+              </span>
+            </a>
+          </li>
+          <li class="user-item">
+            <a href="#" class="sedona-decorative-btn user-link clear-underline want-there brown-btn">
+              Хочу сюда
+            </a>
+          </li>
         </ul>
       </header>
       <main class="main-inner main-container">
@@ -166,7 +170,7 @@
                 <div class="card-main">
                   <div class="card-left">
                     <span class="hotel-card-type dark-text">Гостиница</span>
-                    <a href="#" class="sedona-decorative-btn catalog-btn">Подробнее</a>
+                    <a href="#" class="sedona-decorative-btn catalog-btn brown-btn">Подробнее</a>
                   </div>
                   <div class="card-right">
                     <span class="hotel-card-price dark-text">От 4000 &#8381;</span>
@@ -190,7 +194,7 @@
                 <div class="card-main">
                   <div class="card-left">
                     <span class="hotel-card-type dark-text">Мотель</span>
-                    <a href="#" class="sedona-decorative-btn catalog-btn">Подробнее</a>
+                    <a href="#" class="sedona-decorative-btn catalog-btn brown-btn">Подробнее</a>
                   </div>
                   <div class="card-right">
                     <span class="hotel-card-price dark-text">От 3000 &#8381;</span>
@@ -214,7 +218,7 @@
                 <div class="card-main">
                   <div class="card-left">
                     <span class="hotel-card-type dark-text">Апартаменты</span>
-                    <a href="#" class="sedona-decorative-btn catalog-btn">Подробнее</a>
+                    <a href="#" class="sedona-decorative-btn catalog-btn brown-btn">Подробнее</a>
                   </div>
                   <div class="card-right">
                     <span class="hotel-card-price dark-text">От 2000 &#8381;</span>
@@ -238,7 +242,7 @@
                 <div class="card-main">
                   <div class="card-left">
                     <span class="hotel-card-type dark-text">Гостиница</span>
-                    <a href="#" class="sedona-decorative-btn catalog-btn">Подробнее</a>
+                    <a href="#" class="sedona-decorative-btn catalog-btn brown-btn">Подробнее</a>
                   </div>
                   <div class="card-right">
                     <span class="hotel-card-price dark-text">От 3000 &#8381;</span>
@@ -327,7 +331,7 @@
         </section>
         <section class="footer-about">
           <h2 class="visually-hidden">Сделано Html academy</h2>
-          <a href="class="htmlacademy-link" href="https://htmlacademy.ru/">.html<br>academy</a>
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html<br>academy</a>
         </section>
       </footer>
     </div>

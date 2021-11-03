@@ -129,6 +129,8 @@ body {
 
 .user-item {
   margin-right: 33px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .navigation-item:last-of-type,
@@ -138,6 +140,7 @@ body {
 
 .user-link {
   color: #000000;
+  padding: 10px;
 }
 
 .subscribe {
@@ -154,10 +157,21 @@ body {
 }
 
 .first {
-  background-image: url(../img/index_background.jpg);
+  background-image: url("../img/index_background.jpg");
   background-repeat: no-repeat;
   padding-top: 51px;
   padding-bottom: 83px;
+  position: relative;
+}
+
+.mask {
+  background-image: url("../img/white_mask.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 430px;
+  bottom: 0;
 }
 
 .welcome {
@@ -167,6 +181,7 @@ body {
 
 .header-logo {
   position: absolute;
+  z-index: 2;
   left: 44%;
   top: 0%;
 }
@@ -416,6 +431,7 @@ body {
   margin-right: auto;
   padding-top: 13px;
   padding-bottom: 17px;
+  border-radius: 10px;
 }
 
 .hotels-found {
@@ -594,4 +610,180 @@ body {
 
 .price-field {
   margin-left: auto;
+}
+
+.icon-present {
+  height: 76px;
+  margin: 0;
+  background-image: url("/img/icons/present.svg");
+  background-size: 64px 76px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 23px;
+}
+
+.icon-house {
+  height: 76px;
+  margin: 0;
+  background-image: url("/img/icons/house.svg");
+  background-size: 75px 72px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 23px;
+}
+
+.icon-burger {
+  height: 76px;
+  margin: 0;
+  background-image: url("/img/icons/burger.svg");
+  background-size: 74px 70px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 23px;
+}
+
+.brown-btn:hover {
+  background-color: #615048;
+}
+
+.brown-btn:focus {
+  background-color: #615048;
+  border: 3px solid #83B3D3;
+}
+
+.brown-btn:active {
+  background-color: #615048;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.want-there {
+  border-radius: 4px;
+  width: 160px;
+}
+
+.current-page {
+  border-bottom: 2px solid #756257;
+}
+
+.navigation-link:hover {
+  color: #756257;
+}
+
+.navigation-link:focus {
+  color: #756257;
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.navigation-link:active {
+  color: rgba(136, 127, 121, 0.3);
+}
+
+.user-link svg:hover{
+  stroke: #756257;
+}
+
+.user-link svg:focus{
+  stroke: #756257;
+  top: 10;
+  bottom: 10;
+}
+
+.user-link:focus {
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.user-link svg:active{
+  stroke: rgba(136, 127, 121, 0.3);
+}
+
+.social-btn {
+  width: 40px;
+  height: 40px;
+}
+
+.social-btn svg {
+  fill: #83B3D3;
+}
+
+.social-btn:hover svg {
+  fill: #68A2CA;
+}
+
+/*не получается сделать нужные размеры фейсбуку*/
+.social-btn:focus {
+  border: 3px solid #83B3D3;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.social-btn:focus svg {
+  fill: #68A2CA;
+}
+
+.social-btn:active svg {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.footer-contacts-phone:hover {
+  color: #756257;
+}
+
+.footer-contacts-phone:focus {
+  color: #756257;
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.footer-contacts-phone:active {
+  color: rgba(117, 98, 87, 0.3);
+}
+
+.htmlacademy-link svg {
+  fill: #000000;
+}
+
+.htmlacademy-link:hover svg {
+  fill: #756257;
+}
+
+.htmlacademy-link:focus {
+  color: #756257;
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 10px;
+  position: relative;
+  padding: 23px 19px 22px 22px;
+}
+
+.htmlacademy-link:active svg {
+  fill: rgba(117, 98, 87, 0.3);
+}
+
+.subscribe-button {
+  background: #83B3D3;
+  width: 200px;
+  height: 60px;
+  border-radius: 0px 10px 10px 0px
+}
+
+.subscribe-button:hover {
+  background: #68A2CA;
+}
+
+.subscribe-button:focus {
+  background: #68A2CA;
+  border: 3px solid #756257;
+}
+
+.subscribe-button:active {
+  background: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
+  border: none;
 }
