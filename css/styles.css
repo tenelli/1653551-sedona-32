@@ -70,6 +70,7 @@ body {
   margin-top: auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 40px 72px 30px 72px;
 }
 
@@ -125,6 +126,8 @@ body {
   padding-top: 19px;
   padding-bottom: 20px;
   color: #000000;
+  border: 3px solid transparent;
+  box-sizing: border-box;
 }
 
 .user-item {
@@ -138,10 +141,6 @@ body {
   margin-right: 0;
 }
 
-.user-link {
-  color: #000000;
-  padding: 10px;
-}
 
 .subscribe {
   display: flex;
@@ -156,7 +155,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.first {
+.sedona-welcomes-you {
   background-image: url("../img/index_background.jpg");
   background-repeat: no-repeat;
   padding-top: 51px;
@@ -164,14 +163,13 @@ body {
   position: relative;
 }
 
-.mask {
-  background-image: url("../img/white_mask.svg");
-  background-repeat: no-repeat;
+.sedona-welcomes-you::after {
+  content: "";
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 430px;
+  width: 1200px;
+  height: 57px;
   bottom: 0;
+  background: url("../img/white_mask.svg") no-repeat;
 }
 
 .welcome {
@@ -179,11 +177,11 @@ body {
   margin: 0 auto;
 }
 
+/*в хедере не нравится больше не залезающее на следующий блок лого и утолщающиеся иконки*/
 .header-logo {
   position: absolute;
-  z-index: 2;
-  left: 44%;
-  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .catalog-bg {
@@ -273,11 +271,14 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   margin: 0;
+  position: relative;
+  margin-top: 89px;
   margin-bottom: 20px;
 }
 
 .advantages-item-light {
   background-color: rgba(131, 179, 211, 0.12);
+  position: relative;
 }
 
 .advantages-item-another {
@@ -367,8 +368,11 @@ body {
   font-size: 40px;
   line-height: 40px;
   text-align: center;
+  padding: 15px;
   text-decoration: none;
   color: #000000;
+  border: 3px solid transparent;
+  box-sizing: border-box;
 }
 
 .button {
@@ -512,6 +516,7 @@ body {
   flex-direction: column;
   margin-left: auto;
 }
+
 .stars {
   text-align: center  ;
 }
@@ -612,53 +617,60 @@ body {
   margin-left: auto;
 }
 
-.icon-present {
+.advantage-house::before {
+  content: "";
+  position: absolute;
+  width: 76px;
   height: 76px;
-  margin: 0;
-  background-image: url("/img/icons/present.svg");
-  background-size: 64px 76px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  margin-bottom: 23px;
+  left: 163px;
+  top: -89px;
+  background: url("../img/icons/house.svg") no-repeat;
 }
 
-.icon-house {
+.advantage-burger::before {
+  content: "";
+  position: absolute;
+  width: 76px;
   height: 76px;
-  margin: 0;
-  background-image: url("/img/icons/house.svg");
-  background-size: 75px 72px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  margin-bottom: 23px;
+  left: 163px;
+  top: -89px;
+  background: url("../img/icons/burger.svg") no-repeat;
 }
 
-.icon-burger {
+.advantage-present::before {
+  content: "";
+  position: absolute;
+  background: url("../img/icons/present.svg") no-repeat;
+  width: 76px;
   height: 76px;
-  margin: 0;
-  background-image: url("/img/icons/burger.svg");
-  background-size: 74px 70px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  margin-bottom: 23px;
+  left: 163px;
+  top: -89px;
+}
+
+.brown-btn {
+  border: 3px solid transparent;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.want-there {
+  width: 160px;
 }
 
 .brown-btn:hover {
   background-color: #615048;
+  border: 3px solid transparent;
 }
 
 .brown-btn:focus {
   background-color: #615048;
   border: 3px solid #83B3D3;
+  outline: none;
 }
 
 .brown-btn:active {
   background-color: #615048;
   color: rgba(255, 255, 255, 0.3);
-}
-
-.want-there {
-  border-radius: 4px;
-  width: 160px;
 }
 
 .current-page {
@@ -669,56 +681,86 @@ body {
   color: #756257;
 }
 
-.navigation-link:focus {
+.navigation-link:focus,
+.current-page:focus {
   color: #756257;
-  border: 3px solid #83B3D3;
-  box-sizing: border-box;
+  outline: none;
   border-radius: 10px;
+  border: 3px solid #83B3D3;
 }
 
 .navigation-link:active {
   color: rgba(136, 127, 121, 0.3);
 }
 
-.user-link svg:hover{
+.user-link {
+  color: #000000;
+  display: block;
+  position: relative;
+  width: 38px;
+  height: 38px;
+  border: 3px solid transparent;
+  box-sizing: border-box;
+}
+
+.user-link svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.user-link svg:hover {
   stroke: #756257;
 }
 
-.user-link svg:focus{
+.user-link:focus svg {
   stroke: #756257;
   top: 10;
   bottom: 10;
 }
 
 .user-link:focus {
+  border-radius: 10px;
   border: 3px solid #83B3D3;
   box-sizing: border-box;
-  border-radius: 10px;
+  outline: none;
 }
 
-.user-link svg:active{
+.user-link:active svg{
   stroke: rgba(136, 127, 121, 0.3);
 }
 
 .social-btn {
-  width: 40px;
-  height: 40px;
+  position: relative;
+  display: block;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  box-sizing: border-box;
 }
 
 .social-btn svg {
-  fill: #83B3D3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #83B3D3
 }
 
 .social-btn:hover svg {
   fill: #68A2CA;
 }
 
-/*не получается сделать нужные размеры фейсбуку*/
 .social-btn:focus {
   border: 3px solid #83B3D3;
-  border-radius: 10px;
-  width: 40px;
-  height: 40px;
+  box-sizing: border-box;
+  outline: none;
 }
 
 .social-btn:focus svg {
@@ -739,13 +781,33 @@ body {
   box-sizing: border-box;
   border-radius: 10px;
   padding: 15px;
+  outline: none;
 }
 
 .footer-contacts-phone:active {
   color: rgba(117, 98, 87, 0.3);
 }
 
+.htmlacademy-link {
+  display: block;
+  position: relative;
+  min-width: 154px;
+  min-height: 64px;
+  margin: 0;
+  margin-left: 213px;
+  padding: 0;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  box-sizing: border-box;
+}
+
 .htmlacademy-link svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
   fill: #000000;
 }
 
@@ -756,10 +818,14 @@ body {
 .htmlacademy-link:focus {
   color: #756257;
   border: 3px solid #83B3D3;
+  outline: none;
   box-sizing: border-box;
   border-radius: 10px;
   position: relative;
-  padding: 23px 19px 22px 22px;
+}
+
+.htmlacademy-link:focus svg {
+  fill: #756257;
 }
 
 .htmlacademy-link:active svg {
@@ -770,7 +836,7 @@ body {
   background: #83B3D3;
   width: 200px;
   height: 60px;
-  border-radius: 0px 10px 10px 0px
+  border-radius: 0px 10px 10px 0px;
 }
 
 .subscribe-button:hover {
@@ -779,11 +845,31 @@ body {
 
 .subscribe-button:focus {
   background: #68A2CA;
+  outline: none;
   border: 3px solid #756257;
+  box-sizing: border-box;
 }
 
 .subscribe-button:active {
   background: #68A2CA;
   color: rgba(255, 255, 255, 0.3);
-  border: none;
+}
+
+.heart-icon {
+  display: block;
+  position: relative;
+}
+
+.heart-icon::after {
+  position: absolute;
+  left: 19px;
+  content: "12";
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  font-size: 10px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #7DB550;
 }
