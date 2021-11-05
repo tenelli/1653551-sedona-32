@@ -728,8 +728,28 @@ body {
   outline: none;
 }
 
+/*Не получается прикрутить прозрачность ни иконкам, ни цифре в кружочке*/
 .user-link:active svg{
   stroke: rgba(136, 127, 121, 0.3);
+}
+
+.heart-icon {
+  display: block;
+  position: relative;
+}
+
+.heart-icon::after {
+  position: absolute;
+  left: 19px;
+  content: "12";
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  font-size: 10px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #7DB550;
 }
 
 .social-btn {
@@ -852,23 +872,4 @@ body {
 .subscribe-button:active {
   background: #68A2CA;
   color: rgba(255, 255, 255, 0.3);
-}
-
-.heart-icon {
-  display: block;
-  position: relative;
-}
-
-.heart-icon::after {
-  position: absolute;
-  left: 19px;
-  content: "12";
-  width: 19px;
-  height: 19px;
-  border-radius: 50%;
-  font-size: 10px;
-  line-height: 18px;
-  text-align: center;
-  color: #FFFFFF;
-  background-color: #7DB550;
 }
