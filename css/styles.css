@@ -61,8 +61,8 @@ body {
 
 .user-list {
   display: flex;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   margin-right: 72px;
 }
 
@@ -123,15 +123,15 @@ body {
 
 .navigation-link {
   display: block;
-  padding-top: 19px;
-  padding-bottom: 20px;
+  padding-top: 17px;
+  padding-bottom: 17px;
   color: #000000;
   border: 3px solid transparent;
   box-sizing: border-box;
 }
 
 .user-item {
-  margin-right: 33px;
+  margin-right: 21px;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -176,11 +176,11 @@ body {
   margin: 0 auto;
 }
 
-/*в хедере не нравится больше не залезающее на следующий блок лого и утолщающиеся иконки*/
 .header-logo {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 }
 
 .catalog-bg {
@@ -316,6 +316,7 @@ body {
 
 .subscribe-catalog-p {
   color: #333333;
+  margin-bottom: 26px;
 }
 
 .div-flex {
@@ -364,6 +365,8 @@ body {
 }
 
 .footer-contacts-phone {
+  margin-left: 60px;
+  margin-right: 60px;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
@@ -404,6 +407,24 @@ body {
   line-height: 21px;
 }
 
+.breadcrumb {
+  position: relative;
+  width: 4px;
+  height:
+  4px;
+  margin-right: 13px;
+}
+
+.breadcrumb svg {
+  position: absolute;
+  fill: #FFFFFF;
+}
+
+.arrow svg {
+  fill: #FFFFFF;
+  transform: rotate(-90deg);
+}
+
 .catalog-filter-item {
   font-size: 18px;
   line-height: 24px;
@@ -427,7 +448,6 @@ body {
 }
 
 .search-btn {
-  display: block;
   width: 576px;
   margin-top: 73px;
   margin-left: auto;
@@ -711,12 +731,12 @@ body {
   margin: auto;
 }
 
-.user-link svg:hover {
-  stroke: #756257;
+.user-link:hover svg{
+  fill: #756257;
 }
 
 .user-link:focus svg {
-  stroke: #756257;
+  fill: #756257;
   top: 10;
   bottom: 10;
 }
@@ -728,13 +748,13 @@ body {
   outline: none;
 }
 
-/*Не получается прикрутить прозрачность ни иконкам, ни цифре в кружочке*/
 .user-link:active svg{
-  stroke: rgba(136, 127, 121, 0.3);
+  fill: rgba(136, 127, 121, 0.3);
 }
 
 .heart-icon {
   display: block;
+  margin: 0;
   position: relative;
 }
 
@@ -750,6 +770,10 @@ body {
   text-align: center;
   color: #FFFFFF;
   background-color: #7DB550;
+}
+
+.heart-icon:hover::after {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .social-btn {
@@ -813,7 +837,6 @@ body {
   min-width: 154px;
   min-height: 64px;
   margin: 0;
-  margin-left: 213px;
   padding: 0;
   border-radius: 10px;
   border: 3px solid transparent;
@@ -854,8 +877,18 @@ body {
 .subscribe-button {
   background: #83B3D3;
   width: 200px;
-  height: 60px;
+  border: 0;
   border-radius: 0px 10px 10px 0px;
+}
+
+/*тут пока без состояний*/
+.user-email {
+  width: 600px;
+  height: 60px;
+  background: #F2F2F2;
+  border: 0;
+  border-radius: 10px 0 0 10px;
+  box-sizing: border-box;
 }
 
 .subscribe-button:hover {
