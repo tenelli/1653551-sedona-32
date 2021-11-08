@@ -112,9 +112,39 @@ body {
   margin-bottom: 76px;
 }
 
+.show-div {
+  display: flex;
+  width: 160px;
+  justify-content: space-between;
+}
+
 .show {
   width: 48px;
   height: 48px;
+  border: 2px solid #E6E6E6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  position: relative;
+}
+
+.show:hover,
+.show:focus {
+  border: 2px solid #83B3D3;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.show:active {
+  border: 2px solid #000000;
+  box-sizing: border-box;
+}
+
+.show svg {
+  position: absolute;
+  fill: #FFFFFF;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .clear-underline {
@@ -285,7 +315,7 @@ body {
 }
 
 .advantages-item-blue {
-  grid-column: span 3; /*сработало самое простое решение*/
+  grid-column: span 3;
   width: 100%;
   display: flex;
   background-color: #83B3D3;
@@ -338,18 +368,74 @@ body {
 }
 
 .catalog-btn {
-  width: 160px;
+  width: 151px;
+}
+
+/*фокус для этой кнопки отображается максимально криво, в стайлгайде её нет вообще, помучалась и удалила на момент*/
+.load {
+  width: 625px;
+  margin-bottom: 61px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+}
+
+.load a {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+  display: block;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  font-weight: 700px;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.to-selected,
+.selected-btn {
+  border-radius: 4px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  border: 3px solid transparent;
+  box-sizing: border-box;
+}
+
+.to-selected:hover {
+  background-color: #68A2CA;
+  border: 3px solid transparent;
+  outline: 1px solid #756257;
+  box-sizing: border-box;
+}
+
+.to-selected:focus {
+  border: 3px solid #756257;
+  outline: none;
+}
+
+.to-selected:active {
+  outline: 1px solid #756257;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.selected-btn:hover {
+  background-color: #6C9E42;
+}
+
+.selected-btn:focus {
+  background: #6C9E42;
+  border: 3px solid #756257;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.selected-btn:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .blue-btn {
   background-color: #83B3D3;
-}
-
-.blue-btn-link {
-  color: #FFFFFF;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
 }
 
 .selected-btn {
@@ -405,24 +491,68 @@ body {
   color: #FFFFFF;
   font-size: 16px;
   line-height: 21px;
+  display: block;
+  border: 3px solid transparent;
+  padding: 3px 8px;
+  box-sizing: border-box;
 }
 
 .breadcrumb {
   position: relative;
-  width: 4px;
-  height:
-  4px;
-  margin-right: 13px;
+  width: 28px;
+  height: 27px;
+  display: block;
+  padding: 0;
 }
 
 .breadcrumb svg {
   position: absolute;
   fill: #FFFFFF;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-link:hover svg {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-link:focus {
+  color: rgba(255, 255, 255, 0.3);
+  border: 3px solid #83B3D3;
+  outline: none;
+}
+
+.breadcrumbs-link:hover svg {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+.arrow {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: 10px;
 }
 
 .arrow svg {
+  position: absolute;
   fill: #FFFFFF;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
   transform: rotate(-90deg);
+}
+
+.arrow:hover svg,
+.arrow:focus svg,
+.arrow:active svg {
+  fill: transparent;
+  outline: none;
+  border: 0;
 }
 
 .catalog-filter-item {
@@ -438,13 +568,7 @@ body {
 .sorting-type {
   font-size: 18px;
   line-height: 24px;
-}
-
-.load {
-  width: 625px;
-  margin-bottom: 61px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-right: 81px;
 }
 
 .search-btn {
@@ -470,7 +594,34 @@ body {
 
 .hotel-card {
   display: flex;
-  margin-bottom: 61px;
+  margin-bottom: 58px;
+}
+
+.hotel-info {
+  margin-left: 37px;
+}
+
+.hotel-img-link {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 3px solid transparent;
+  box-sizing: border-box;
+}
+
+.hotel-img-link:hover {
+  opacity: 0.6;
+}
+
+
+/*непонятный небольщой белый зазор снизу*/
+.hotel-img-link:focus {
+  border: 3px solid #83B3D3;
+  outline: none;
+}
+
+.hotel-img-link:active {
+  opacity: 0.3;
 }
 
 .hotel-card-link {
@@ -480,12 +631,31 @@ body {
   line-height: 31px;
 }
 
-.hotel-card-title {
-  margin: 0;
+.hotel-card-link h3 {
+  border: 3px solid transparent;
+  padding: 10px 15px 10px 16px;
+  margin-left: -17px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
-.hotel-info {
-  margin-left: 36px;
+.hotel-card-link:hover h3{
+  color: #756257;
+}
+
+.hotel-card-link:focus {
+  outline: none;
+}
+
+.hotel-card-link:focus h3{
+  border: 3px solid #83B3D3;
+  color: #756257;
+}
+
+.hotel-card-link:active h3{
+  color: rgba(117, 98, 87, 0.3);
 }
 
 .card-main {
@@ -494,30 +664,34 @@ body {
 
 .card-left {
   display: block;
+  margin: 0;
+  padding: 0;
   margin-right: 8px;
 }
 
 .card-right {
   display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-card-title {
+  margin: 0;
+  padding: 0;
 }
 
 .hotel-card-type {
   display: block;
   margin: 0;
   padding: 0;
-  margin-bottom: 29px;
+  margin-bottom: 20px;
 }
 
 .hotel-card-price {
   display: block;
   margin: 0;
   padding: 0;
-  margin-bottom: 29px;
-}
-
-.reset {
-  color: #FFFFFF;
-  margin-left: auto;
+  margin-bottom: 20px;
 }
 
 .hotel-card-rate {
@@ -527,7 +701,7 @@ body {
   padding-top: 9px;
   padding-bottom: 10px;
   text-align: center;
-  margin-top: auto;
+  margin-top: 80px;
 }
 
 .rate {
@@ -537,7 +711,48 @@ body {
 }
 
 .stars {
-  text-align: center  ;
+  text-align: center;
+}
+
+.stars-rating-2 {
+  width: 43px;
+}
+
+.stars-rating-3 {
+  width: 68px;
+}
+
+.stars-rating-4 {
+  width: 93px;
+}
+
+.stars-rating {
+  position: relative;
+  align-self: center;
+}
+
+.stars-rating-4::before {
+  content: "";
+  position: absolute;
+  width: 89px;
+  height: 17px;
+  background: url("../img/icons/star.svg") space;
+}
+
+.stars-rating-3::before {
+  content: "";
+  position: absolute;
+  width: 68px;
+  height: 17px;
+  background: url("../img/icons/star.svg") space;
+}
+
+.stars-rating-2::before {
+  content: "";
+  position: absolute;
+  width: 43px;
+  height: 17px;
+  background: url("../img/icons/star.svg") space;
 }
 
 .dark-text {
@@ -582,9 +797,26 @@ body {
   line-height: 26px;
   padding-top: 15px;
   padding-bottom: 15px;
+  border-radius: 4px;
+  border: 3px solid transparent;
+  box-sizing: border-box;
 }
 
-/*цвета с макета нормально не захватились, так понимаю, что эти*/
+.pagination-link:hover {
+  background-color: #68A2CA;
+}
+
+.pagination-link:focus {
+  background-color: #68A2CA;
+  border: 3px solid #756257;
+  outline: none;
+}
+
+.pagination-link:hover {
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .current {
   background-color: #F2F2F2;
   color: #000000;
@@ -624,12 +856,64 @@ body {
 /*тут пока пиксели на глаз, потому как в фигме что-то странное*/
 .apply {
   margin-top: 60px;
+  background: #83B3D3;
+  width: 160px;
+  border: 0;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 3px solid transparent;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.apply:hover {
+  background: #68A2CA;
+}
+
+.apply:focus {
+  background: #68A2CA;
+  outline: none;
+  border: 3px solid #FFFFFF;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.apply:active {
+  background: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
+  border: 3px solid transparent;
+  outline: none;
 }
 
 .reset {
-  display: block;
+  color: #FFFFFF;
   margin-left: auto;
-  margin-right: auto;
+  background-color: transparent;
+  display: block;
+  font-size: 18px;
+  line-height: 23px;
+  width: 160px;
+  padding: 0;
+  cursor: pointer;
+  border: 3px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+}
+
+.reset:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.reset:focus {
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+}
+
+.reset:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .price-field {
