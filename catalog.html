@@ -67,14 +67,7 @@
                 </span>
               </a>
             </li>
-            <li class="breadcrumbs-item">
-              <a class="arrow" href="#">
-                <svg aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.22 7.34c.3-.29.77-.29 1.06 0L10 12.06l4.72-4.72a.75.75 0 1 1 1.06 1.07l-5.25 5.25c-.3.29-.77.29-1.06 0L4.22 8.4a.75.75 0 0 1 0-1.07Z"/>
-                </svg>
-              </a>
-            </li>
-            <li class="breadcrumbs-item">
+            <li class="breadcrumbs-item breadcrumbs-item-alt">
                 <a class="breadcrumbs-link clear-underline">Гостиницы</a>
             </li>
           </ul>
@@ -85,19 +78,19 @@
               <ul class="catalog-filter-list clear-list">
                 <li class="catalog-filter-item">
                   <label class="infrastructure">
-                    <input type="checkbox" name="pool" checked>
+                    <input type="checkbox" name="pool" checked class="visually-hidden">
                     <span>Бассейн</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="infrastructure">
-                    <input type="checkbox" name="parking" checked>
+                    <input type="checkbox" name="parking" checked class="visually-hidden">
                     <span>Парковка</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item ">
                   <label class="infrastructure">
-                    <input type="checkbox" name="wi-fi">
+                    <input type="checkbox" name="wi-fi" class="visually-hidden">
                     <span>Wi-Fi</span>
                   </label>
                 </li>
@@ -108,19 +101,19 @@
               <ul class="catalog-filter-list clear-list">
                 <li class="catalog-filter-item">
                   <label class="dwelling">
-                    <input type="radio" name="dwelling-type" value="hotel" checked>
+                    <input type="radio" name="dwelling-type" value="hotel" checked class="visually-hidden">
                     <span>Гостиница</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="dwelling">
-                    <input type="radio" name="dwelling-type" value="motel">
+                    <input type="radio" name="dwelling-type" value="motel" class="visually-hidden">
                     <span>Мотель</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="dwelling">
-                    <input type="radio" name="dwelling-type" value="apartments">
+                    <input type="radio" name="dwelling-type" value="apartments" class="visually-hidden">
                     <span>Апартаменты</span>
                   </label>
                 </li>
@@ -129,20 +122,30 @@
             <fieldset class="catalog-filter-group price-field">
               <legend class="catalog-filter-title">Стоимость, &#8381;:</legend>
               <div class="price-sorting">
-                <label class="catalog-filter-label">
-                  <input class="catalog-filter-input price-block" type="number" name="min-price" placeholder="0">
-                </label>
-                <label class="catalog-filter-label">
-                  <input class="catalog-filter-input price-block" type="number" name="max-price" placeholder="9000">
-                </label>
+                <div class="label-container">
+                  <label>
+                    <input type="number" name="min-price" placeholder="0">
+                  </label>
+                  <span>от</span>
+                </div>
+                <div class="label-container">
+                  <label>
+                    <input type="number" name="max-price" placeholder="9000">
+                  </label>
+                  <span>до</span>
+                </div>
               </div>
-              <div class="toggles">
-                <button class="range-toggle toggle-min" type="button">
-                  <span class="visually-hidden">Изменить минимальную цену.</span>
-                </button>
-                <button class="range-toggle toggle-max" type="button">
-                  <span class="visually-hidden"> Изменить максимальную цену.</span>
-                </button>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar">
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden"> Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
               </div>
             </fieldset>
             <div class="form-btns">
@@ -177,7 +180,7 @@
                 <span class="visually-hidden">Показать галерею</span>
               </a>
               <a href="#" class="show clear-underline">
-                <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"> /*надо как-то сделать выбранным по дефолту*/
                   <path d="M2 0H0v2h2V0Zm14 0H4v2h12V0ZM2 4H0v2h2V4Zm14 0H4v2h12V4ZM2 8H0v2h2V8Zm14 0H4v2h12V8ZM2 12H0v2h2v-2Zm14 0H4v2h12v-2Z" fill="#000"/>
                 </svg>
                 <span class="visually-hidden">Показать список</span>

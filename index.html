@@ -35,7 +35,46 @@
                 </span>
               </a>
             </li>
-            <li class="user-item">
+            <li class="user-item heart">
+              <div class="popover visually-hidden">
+                <div class="basket">
+                  <div class="basket-line">
+                    <div class="basket-hotels">
+                      <a class="basket-link" href="#">
+                        <img class="basket-image" src="img/desert.jpg" alt="">
+                      </a>
+                      <div class="basket-titles">
+                        <p class="basket-title">Desert Quail Inn</p>
+                        <p class="basket-type">Мотель</p>
+                      </div>
+                    </div>
+                    <div class="basket-trash">
+                      <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3 4.3H2.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H5.4V5.4h9.1v11.4ZM8.2 3.2h3.4c.3 0 .6-.3.6-.6S12 2 11.7 2H8.2c-.3 0-.5.3-.5.6s.2.6.5.6Z"/><path d="M8.2 14c.3 0 .6-.3.6-.6V7.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6Zm3.5 0c.3 0 .6-.3.6-.6V7.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z" fill="#000"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="basket-line">
+                    <div class="basket-hotels">
+                      <a class="basket-link" href="#">
+                        <img class="basket-image" src="img/villas.jpg" alt="">
+                      </a>
+                      <div class="basket-titles">
+                        <p class="basket-title">Villas at Poco Diablo</p>
+                        <p class="basket-type">Апартаменты</p>
+                      </div>
+                    </div>
+                    <div class="basket-trash">
+                       <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3 4.3H2.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H5.4V5.4h9.1v11.4ZM8.2 3.2h3.4c.3 0 .6-.3.6-.6S12 2 11.7 2H8.2c-.3 0-.5.3-.5.6s.2.6.5.6Z"/><path d="M8.2 14c.3 0 .6-.3.6-.6V7.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6Zm3.5 0c.3 0 .6-.3.6-.6V7.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z" fill="#000"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="all-chosen">
+                  <a href="#">Все избранные</p>
+                </div>
+              </div>
               <a class="user-link clear-underline heart-icon" href="#">
                 <svg aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9.9 19a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
@@ -117,7 +156,7 @@
         <section class="subscribe subscribe-index">
           <h2 class="subscribe-h">Подпишитесь на рассылку</h2>
           <p class="subscribe-p">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post"> <!--Форму пока не трогала, вроде это 8 раздел-->
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="div-flex">
               <input type="email" name="user-email" class="user-email" placeholder="Ваш e-mail" required>
               <button class="subscribe-button blue-btn sedona-decorative-btn" type="submit">
@@ -170,6 +209,75 @@
           </a>
         </section>
       </footer>
+      <div class="modal-container visually-hidden">
+        <div class="modal modal-search">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form action="https://echo.htmlacademy.ru/courses" method="post">
+              <div class="arrival">
+                <div class="field-div">
+                  <label for="arrival-field" class="black-label">Дата заезда:</label>
+                </div>
+                <div class="date-field">
+                  <div class="grey-div">
+                    <input type="text" name="arrival" id="arrival-field" placeholder="27 апреля 2020">
+                    <button class="calendar-btn"></button>
+                  </div>
+                  <p class="error-message">Мы не можем отправить вас в прошлое</p>
+                </div>
+              </div>
+              <div class="departure">
+                <div class="field-div">
+                  <label for="departure-field" class="black-label">Дата выезда:</label>
+                </div>
+                <div class="date-field">
+                  <div class="grey-div">
+                    <input type="text" name="departure" id="departure-field" placeholder="1 сентября 2021">
+                    <button class="calendar-btn"></button>
+                  </div>
+                  <p class="accept-message">На эти даты есть свободные номера. Пока есть.</p>
+                </div>
+              </div>
+              <div class="person-number">
+                <div class="adults">
+                  <div class="field-div">
+                    <label for="adults-number" class="black-label adults-label">Взрослые:</label>
+                  </div>
+                  <div class="grey-div-alt">
+                    <button class="min-btn"></button>
+                    <input type="text" name="adults" id="adults" placeholder="2">
+                    <button class="plus-btn"></button>
+                  </div>
+                </div>
+                <div class="children">
+                  <div class="field-div-alt">
+                    <label for="children-number" class="black-label children-label">Дети:</label>
+                  </div>
+                  <span class="help-icon">i</span>
+                  <div class="help-message">
+                    Укажите количество детей,<br>
+                    которые будут с вами, возраст<br>
+                    которых от 6 до 18 лет. Дети<br>
+                    до 6 лет размещаются<br>
+                    бесплатно.
+                  </div>
+                  <div class="grey-div-alt">
+                    <button class="min-btn"></button>
+                    <input type="text" name="children" id="children-number" placeholder="1">
+                    <button class="plus-btn"></button>
+                  </div>
+                </div>
+              </div>
+              <button class="modal-blue-btn">
+                <input type="submit" value="Найти">
+              </button>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 </html>
