@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   </head>
   <body>
     <div class="container">
@@ -22,13 +23,13 @@
           </ul>
         </nav>
         <a class="logo header-logo">
-          <img src="img/logo.svg" alt="Логотип сайта о городке Седона">
+          <img src="img/logo.svg" alt="Логотип сайта о городке Седона." width="138" height="70">
         </a>
         <ul class="user-list clear-list">
-            <li class="user-item">
+            <li class="user-item magnifier">
               <a class="user-link clear-underline" href="#">
-                <svg aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2fill000/svg">
-                  <path d="m19.5 18-3.7-3.67a8 8 0 0 0 1.7-4.87 8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z" ="#000"/>
+                <svg aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m19.5 18-3.7-3.67a8 8 0 0 0 1.7-4.87 8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z"/>
                 </svg>
                 <span class="visually-hidden">
                   Поиск
@@ -41,28 +42,28 @@
                   <h2 class="popover-title visually-hidden">Корзина</h2>
                   <div class="popover-cart-item">
                     <div class="popover-hotel-info">
-                      <img class="popover-image" src="img/desert.jpg" alt="">
+                      <img class="popover-image" src="img/desert.jpg" width="48" height="48" alt="Аватар мотеля Десерт Кваил.">
                       <div class="popover-hotels">
                         <p class="popover-hotel-title">Desert Quail Inn</p>
                         <p class="popover-hotel-type">Мотель</p>
                       </div>
                     </div>
-                    <button class="trash">
+                    <button class="trash" type="button">
                       <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M17.3 4.3H2.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H5.4V5.4h9.1v11.4ZM8.2 3.2h3.4c.3 0 .6-.3.6-.6S12 2 11.7 2H8.2c-.3 0-.5.3-.5.6s.2.6.5.6Z"/>
                         <path d="M8.2 14c.3 0 .6-.3.6-.6V7.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6Zm3.5 0c.3 0 .6-.3.6-.6V7.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z"/>
                       </svg>
                     </button>
                   </div>
-                  <div class="popover-cart-item">
+                  <div class="popover-cart-item last">
                     <div class="popover-hotel-info">
-                      <img class="popover-image" src="img/villas.jpg" alt="">
+                      <img class="popover-image" src="img/villas.jpg" width="48" height="48" alt="Аватар апартаментов Вилла в Поко Дьябло.">
                       <div class="popover-hotels">
                         <p class="popover-hotel-title">Villas at Poco Diablo</p>
                         <p class="popover-hotel-type">Апартаменты</p>
                       </div>
                     </div>
-                    <button class="trash">
+                    <button class="trash" type="button">
                       <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M17.3 4.3H2.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H5.4V5.4h9.1v11.4ZM8.2 3.2h3.4c.3 0 .6-.3.6-.6S12 2 11.7 2H8.2c-.3 0-.5.3-.5.6s.2.6.5.6Z"/>
                         <path d="M8.2 14c.3 0 .6-.3.6-.6V7.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6Zm3.5 0c.3 0 .6-.3.6-.6V7.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z"/>
@@ -73,7 +74,6 @@
                     <a class="all-chosen-link clear-underline" href="#">Все избранные</a>
                   </div>
                 </div>
-
               </div>
               <a class="user-link clear-underline heart-icon" href="#">
                 <svg aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
@@ -86,7 +86,7 @@
             </li>
             <li class="user-item">
               <a href="#" class="sedona-decorative-btn сlear-underline want-there brown-btn">
-                Хочу сюда
+                Хочу сюда!
               </a>
             </li>
         </ul>
@@ -94,22 +94,22 @@
       <main class="main-index main-container">
         <section class="sedona-welcomes-you">
           <h1 class="visually-hidden">Городок Седона</h1>
-          <img class="welcome" src="img/welcome.svg">
+          <img class="welcome" src="img/welcome.svg" width="458" height="354" alt="Приветственное сообщение Седоны.">
         </section>
         <h2 class="visually-hidden">Преимущества</h2>
         <p class="heading town">Седона — небольшой городок в Аризоне, <br>
           заслуживающий большего!</p>
-        <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         <div class="advantages">
           <ul class="advantages-list clear-list">
             <li class="advantages-item-blue">
               <div class="advantages-item">
-                <h3 class="advantages-title advantages-white">Настоящий городок</h3>
-                <span class="advantages-number advantages-white">-№1-</span>
+                <h3 class="advantages-title advantages-white">Настоящий<br>городок</h3>
+                <span class="advantages-number advantages-white">— №1 —</span>
                 <p class="advantages-description advantages-white">Седона — не аттракцион<br> для туристов, там течёт<br>
                   своя жизнь</p>
               </div>
-              <img src="img/sedona_photo.jpg" alt="Пейзаж Седоны">
+              <img src="img/sedona_photo.jpg" width="800" height="384" alt="Пейзаж Седоны.">
             </li>
             <li class="advantages-item advantages-item-light">
               <h3 class="advantages-title-alt advantage-house">Жильё</h3>
@@ -124,26 +124,26 @@
               <p class="advantages-description dark-text">Не только китайского,<br>но и настоящего местного<br>производства!</p>
             </li>
             <li class="advantages-item-blue">
-              <img src="img/bridge_devil.jpg" alt="мост дьявола">
+              <img src="img/bridge_devil.jpg" width="800" height="384" alt="Мост дьявола.">
               <div class="advantages-item">
-                <h3 class="advantages-title advantages-white">Там есть<br> мост дьявола</h3>
-                <span class="advantages-number advantages-white">-№2-</span>
+                <h3 class="advantages-title advantages-white">Там есть<br>мост дьявола</h3>
+                <span class="advantages-number advantages-white">— №2 —</span>
                 <p class="advantages-description advantages-white">Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется</p>
               </div>
             </li>
             <li class="advantages-item advantages-item-light">
               <h3 class="advantages-title">Небольшая<br> площадь</h3>
-              <span class="advantages-number dark-text">-№3-</span>
+              <span class="advantages-number dark-text">— №3 —</span>
               <p class="advantages-description dark-text">Все достопримечательности<br>находятся очень близко</p>
             </li>
             <li class="advantages-item advantages-item-another">
               <h3 class="advantages-title">Красивая<br> дорога</h3>
-              <span class="advantages-number dark-text">-№4-</span>
+              <span class="advantages-number dark-text">— №4 —</span>
               <p class="advantages-description dark-text">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
             </li>
             <li class="advantages-item advantages-item-light">
               <h3 class="advantages-title">Мало<br> туристов</h3>
-              <span class="advantages-number dark-text">-№5-</span>
+              <span class="advantages-number dark-text">— №5 —</span>
               <p class="advantages-description dark-text">Большинство едет в Гранд<br>Каньон и толпится там</p>
             </li>
           </ul>
@@ -151,7 +151,7 @@
         <section class="hotel-search">
           <h2 class="heading interest">Заинтересовались?</h2>
           <p class="suggestions">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a href="catalog.html" class="sedona-decorative-btn search-btn brown-btn">Поиск гостиницы в Седоне</a>
+          <a href="catalog.html" class="search-btn clear-underline">Поиск гостиницы в Седоне</a>
         </section>
         <section class="subscribe subscribe-index">
           <h2 class="subscribe-h">Подпишитесь на рассылку</h2>
@@ -171,7 +171,7 @@
           <h2 class="visually-hidden">Давайте дружить</h2>
           <ul class="footer-social-list clear-list">
             <li class="footer-social-item clear-list">
-              <a class="button social-btn" href="https://twitter.com/htmlacademy_ru">
+              <a class="button social-btn twitter" href="https://twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">Твиттер</span>
                 <svg width="18" height="15" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11.6.2c1.8-.5 3.2.3 3.8 1.2.7-.2 1.4-.5 2.1-.7 0 .9-.6 1.5-.9 1.8.7.1 1.4-.6 1.4-.6-.2 1-1.1 1.8-1.7 2C16.1 10.7 13 15.1 5.7 15h-.5c-.4 0-4.4-.5-5.2-1.9 2.4.2 4.1-.4 5-1.2-1-.3-2.9-.4-3.2-2.9.4.1.6.2 1.3.1C1.8 8.3.4 7.5.5 5.3c.3.3 1.1.5 1.4.5C1.1 5.6-.2 2.5.9.9c1.9 1.9 4 3.6 7.6 3.8C8.7 2.3 9.7.8 11.6.2Z"/>
@@ -179,7 +179,7 @@
               </a>
             </li>
             <li class="footer-social-item clear-list">
-              <a class="button social-btn" href="https://www.facebook.com/htmlacademy">
+              <a class="button social-btn facebook" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Фэйсбук</span>
                 <svg width="10" height="18" xmlns="http://www.w3.org/2000/svg">
                   <path d="M7 0C4.8 0 3 1.8 3 4v2H0v4h3v8h4v-8h3V6H7V4h3V0H7Z"/>
@@ -187,7 +187,7 @@
               </a>
             </li>
             <li class="footer-social-item clear-list">
-              <a class="button social-btn" href="https://youtube.com/c/HTMLAcademyRUS">
+              <a class="button social-btn youtube" href="https://youtube.com/c/HTMLAcademyRUS">
                 <span class="visually-hidden">Ютуб</span>
                 <svg width="20" height="14" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M17.81.42c.86.23 1.54.9 1.77 1.77C20 3.75 20 7 20 7s0 3.26-.42 4.81a2.5 2.5 0 0 1-1.77 1.77C16.25 14 10 14 10 14s-6.25 0-7.81-.42a2.5 2.5 0 0 1-1.77-1.77C0 10.26 0 7 0 7s0-3.25.42-4.81A2.5 2.5 0 0 1 2.19.42C3.75 0 10 0 10 0s6.25 0 7.81.42ZM13.2 7 8 10V4l5.2 3Z"/>
@@ -208,7 +208,7 @@
             </svg>
           </a>
         </section>
-        <div class="visually-hidden modal-container">
+        <div class="modal-container visually-hidden">
           <div class="modal">
             <button class="modal-close-button" type="button">
               <span class="visually-hidden">Закрыть</span>
@@ -218,15 +218,15 @@
               <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="arrival-label" for="arrival">Дата заезда:</label>
                 <div class="grey-div arrival-div">
-                  <input class="grey-field arrival-field" type="text" id="apartments-for" name="apartments-for" value="27 апреля 2020" placeholder="Укажите дату">
+                  <input class="grey-field arrival-field" type="text" id="arrival" name="arrival" value="27 апреля 2020" placeholder="Укажите дату">
                   <button class="calendar" type="button">
                     <span class="visually-hidden">Показать календарь</span>
                   </button>
                 </div>
                 <i class="message-modal message-arrival error-message">Мы не можем отправить вас в прошлое.</i>
-                <label class="departure-label" for="apartments-of">Дата выезда:</label>
+                <label class="departure-label" for="departure">Дата выезда:</label>
                 <div class="grey-div departure-div">
-                  <input class="grey-field departure-field" type="text" id="apartments-of" name="apartments-of" value="1 сентября 2021" placeholder="Укажите дату">
+                  <input class="grey-field departure-field" type="text" id="departure" name="departure" value="1 сентября 2021" placeholder="Укажите дату">
                   <button class="calendar" type="button">
                     <span class="visually-hidden">Показать календарь</span>
                   </button>
@@ -237,7 +237,7 @@
                   <button class="modal-btn min-btn" type="button">
                     <span class="visually-hidden">Минус</span>
                   </button>
-                  <input class="grey-field grey-field-alt аdults-input" type="number" id="adults" value="2" name="аdults">
+                  <input class="grey-field grey-field-alt аdults-input" type="text" id="adults" value="2" name="аdults">
                   <button class="modal-btn plus-btn" type="button">
                     <span class="visually-hidden">Плюс</span>
                   </button>
@@ -246,13 +246,13 @@
                   <label class="children-label" for="children">Дети:</label>
                   <button class="info-modal" type="button">
                     <i class="modal-letter">i</i>
-                    <div class="help-message">
+                    <i class="help-message">
                       Укажите количество детей,<br>
                       которые будут с вами, возраст<br>
                       которых от 6 до 18 лет. Дети<br>
                       до 6 лет размещаются<br>
                       бесплатно.
-                    </div>
+                    </i>
                     <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                   </button>
                 </div>
@@ -260,7 +260,7 @@
                   <button class="modal-btn min-btn" type="button">
                     <span class="visually-hidden">Минус</span>
                   </button>
-                  <input class="grey-field grey-field-alt children-input" type="number" id="children" value="1" name="children">
+                  <input class="grey-field grey-field-alt children-input" type="text" id="children" value="1" name="children">
                   <button class="modal-btn plus-btn" type="button">
                     <span class="visually-hidden">Плюс</span>
                   </button>

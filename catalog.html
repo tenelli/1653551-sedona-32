@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico"><!-- 32×32 -->
 </head>
   <body>
     <div class="container">
@@ -22,10 +23,10 @@
           </ul>
         </nav>
         <a class="logo header-logo" href="index.html">
-          <img src="img/logo.svg" alt="Логотип сайта о городке Седона">
+          <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта о городке Седона.">
         </a>
         <ul class="user-list clear-list">
-          <li class="user-item">
+          <li class="user-item magnifier">
             <a class="user-link clear-underline" href="#">
               <svg aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
                 <path d="m19.5 18-3.7-3.67a8 8 0 0 0 1.7-4.87 8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z"/>
@@ -122,15 +123,15 @@
             <fieldset class="catalog-filter-group price-field">
               <legend class="catalog-filter-title">Стоимость, &#8381;:</legend>
               <div class="price-sorting">
-                <div class="label-container">
+                <div class="label-container label-container-left">
                   <label>
-                    <input type="number" name="min-price" placeholder="0">
+                    <input type="text" name="min-price" placeholder="0">
                   </label>
                   <span>от</span>
                 </div>
                 <div class="label-container">
                   <label>
-                    <input type="number" name="max-price" placeholder="9000">
+                    <input type="text" name="max-price" placeholder="9000">
                   </label>
                   <span>до</span>
                 </div>
@@ -149,7 +150,7 @@
               </div>
             </fieldset>
             <div class="form-btns">
-              <button class="button sedona-decorative-btn apply blue-btn" type="submit">Применить</button>
+              <button class="button apply" type="submit">Применить</button>
               <button class="reset" type="reset">Сбросить</button>
             </div>
           </form>
@@ -157,7 +158,7 @@
         <section class="sedona-dwelling">
           <div class="display-hotels">
             <p class="hotels-found">Найдено гостиниц: 38</p>
-            <form class="sorting-type dark-text">
+            <form class="sorting-type sorting-hotel-type dark-text">
               <label for="sorting" class="visually-hidden">Сортировка</label>
               <select id="sorting" name="sorting">
                 <option value="cheap">Сначала дешёвые</option>
@@ -179,8 +180,8 @@
                 </svg>
                 <span class="visually-hidden">Показать галерею</span>
               </a>
-              <a href="#" class="show clear-underline">
-                <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"> /*надо как-то сделать выбранным по дефолту*/
+              <a href="#" class="show show-chosen clear-underline">
+                <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M2 0H0v2h2V0Zm14 0H4v2h12V0ZM2 4H0v2h2V4Zm14 0H4v2h12V4ZM2 8H0v2h2V8Zm14 0H4v2h12V8ZM2 12H0v2h2v-2Zm14 0H4v2h12v-2Z" fill="#000"/>
                 </svg>
                 <span class="visually-hidden">Показать список</span>
@@ -190,7 +191,7 @@
           <ul class="hotel-list clear-list">
             <li class="hotel-card">
               <a class="hotel-img-link" href="#">
-                <img class="hotel-card-image" src="img/amara.jpg" alt="">
+                <img class="hotel-card-image" src="img/amara.jpg" width="185" height="125" alt="Гостиница Амара Ресорт и Спа.">
               </a>
               <div class="hotel-info">
                 <a class="hotel-card-link clear-underline" href="#">
@@ -216,7 +217,7 @@
             </li>
             <li class="hotel-card">
               <a class="hotel-img-link" href="#">
-                <img class="hotel-card-image" src="img/desert.jpg" alt="">
+                <img class="hotel-card-image" src="img/desert.jpg" width="185" height="125" alt="Мотель Десерт Кваил.">
               </a>
               <div class="hotel-info">
                 <a class="hotel-card-link clear-underline" href="#">
@@ -242,7 +243,7 @@
             </li>
             <li class="hotel-card">
               <a class="hotel-img-link" href="#">
-                <img class="hotel-card-image" src="img/villas.jpg" alt="">
+                <img class="hotel-card-image" src="img/villas.jpg" width="185" height="125" alt="Апартаменты Вилла в Поко Дьябло.">
               </a>
               <div class="hotel-info">
                 <a class="hotel-card-link clear-underline" href="#">
@@ -268,7 +269,7 @@
             </li>
             <li class="hotel-card">
               <a class="hotel-img-link" href="#">
-                <img class="hotel-card-image" src="img/greentree.jpg" alt="">
+                <img class="hotel-card-image" src="img/greentree.jpg" width="185" height="125" alt="Гостиница ГринТри.">
               </a>
               <div class="hotel-info">
                 <a class="hotel-card-link clear-underline" href="#">
@@ -318,8 +319,8 @@
               </li>
             </ul>
             <form class="sorting-type dark-text number-of-hotels">
-              <label for="sorting" class="number-text">Гостиниц на странице</label>
-              <select id="sorting" name="sorting">
+              <label for="quantity-sorting" class="number-text">Гостиниц на странице</label>
+              <select id="quantity-sorting" name="quantity-sorting">
                 <option value="4">4</option>
                 <option value="10">10</option>
                 <option value="20">20</option>
@@ -346,7 +347,7 @@
           <h2 class="visually-hidden">Давайте дружить</h2>
           <ul class="footer-social-list clear-list">
             <li class="footer-social-item clear-list">
-              <a class="button social-btn" href="https://twitter.com/htmlacademy_ru">
+              <a class="button social-btn twitter" href="https://twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">Твиттер</span>
                 <svg width="18" height="15" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11.6.2c1.8-.5 3.2.3 3.8 1.2.7-.2 1.4-.5 2.1-.7 0 .9-.6 1.5-.9 1.8.7.1 1.4-.6 1.4-.6-.2 1-1.1 1.8-1.7 2C16.1 10.7 13 15.1 5.7 15h-.5c-.4 0-4.4-.5-5.2-1.9 2.4.2 4.1-.4 5-1.2-1-.3-2.9-.4-3.2-2.9.4.1.6.2 1.3.1C1.8 8.3.4 7.5.5 5.3c.3.3 1.1.5 1.4.5C1.1 5.6-.2 2.5.9.9c1.9 1.9 4 3.6 7.6 3.8C8.7 2.3 9.7.8 11.6.2Z"/>
@@ -354,7 +355,7 @@
               </a>
             </li>
             <li class="footer-social-item clear-list">
-              <a class="button social-btn" href="https://www.facebook.com/htmlacademy">
+              <a class="button social-btn facebook" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Фэйсбук</span>
                 <svg width="10" height="18" xmlns="http://www.w3.org/2000/svg">
                   <path d="M7 0C4.8 0 3 1.8 3 4v2H0v4h3v8h4v-8h3V6H7V4h3V0H7Z"/>
@@ -362,7 +363,7 @@
               </a>
             </li>
             <li class="footer-social-item clear-list">
-              <a class="button social-btn" href="https://youtube.com/c/HTMLAcademyRUS">
+              <a class="button social-btn youtube" href="https://youtube.com/c/HTMLAcademyRUS">
                 <span class="visually-hidden">Ютуб</span>
                 <svg width="20" height="14" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M17.81.42c.86.23 1.54.9 1.77 1.77C20 3.75 20 7 20 7s0 3.26-.42 4.81a2.5 2.5 0 0 1-1.77 1.77C16.25 14 10 14 10 14s-6.25 0-7.81-.42a2.5 2.5 0 0 1-1.77-1.77C0 10.26 0 7 0 7s0-3.25.42-4.81A2.5 2.5 0 0 1 2.19.42C3.75 0 10 0 10 0s6.25 0 7.81.42ZM13.2 7 8 10V4l5.2 3Z"/>
