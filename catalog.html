@@ -5,7 +5,7 @@
     <title>Каталог</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="favicon.ico"><!-- 32×32 -->
-</head>
+  </head>
   <body>
     <div class="container">
       <header class="page-header">
@@ -36,7 +36,7 @@
               </span>
             </a>
           </li>
-          <li class="user-item">
+          <li class="user-item heart">
             <a class="user-link clear-underline heart-icon" href="#">
               <svg aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.9 19a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
@@ -48,10 +48,10 @@
           </li>
           <li class="user-item">
             <a href="#" class="sedona-decorative-btn сlear-underline want-there brown-btn">
-              Хочу сюда
+              Хочу сюда!
             </a>
           </li>
-      </ul>
+        </ul>
       </header>
       <main class="main-inner main-container">
         <div class="catalog-bg">
@@ -69,7 +69,7 @@
               </a>
             </li>
             <li class="breadcrumbs-item breadcrumbs-item-alt">
-                <a class="breadcrumbs-link clear-underline">Гостиницы</a>
+              <a class="breadcrumbs-link clear-underline">Гостиницы</a>
             </li>
           </ul>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -79,19 +79,19 @@
               <ul class="catalog-filter-list clear-list">
                 <li class="catalog-filter-item">
                   <label class="infrastructure">
-                    <input type="checkbox" name="pool" checked class="visually-hidden">
+                    <input type="checkbox" name="pool" checked class="infrastructure-input visually-hidden">
                     <span>Бассейн</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="infrastructure">
-                    <input type="checkbox" name="parking" checked class="visually-hidden">
+                    <input type="checkbox" name="parking" checked class="visually-hidden infrastructure-input">
                     <span>Парковка</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item ">
                   <label class="infrastructure">
-                    <input type="checkbox" name="wi-fi" class="visually-hidden">
+                    <input type="checkbox" name="wi-fi" class="visually-hidden infrastructure-input">
                     <span>Wi-Fi</span>
                   </label>
                 </li>
@@ -102,19 +102,19 @@
               <ul class="catalog-filter-list clear-list">
                 <li class="catalog-filter-item">
                   <label class="dwelling">
-                    <input type="radio" name="dwelling-type" value="hotel" checked class="visually-hidden">
+                    <input class="visually-hidden dwelling-input" type="radio" name="dwelling-type" value="hotel" checked>
                     <span>Гостиница</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="dwelling">
-                    <input type="radio" name="dwelling-type" value="motel" class="visually-hidden">
+                    <input class="visually-hidden dwelling-input" type="radio" name="dwelling-type" value="motel">
                     <span>Мотель</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="dwelling">
-                    <input type="radio" name="dwelling-type" value="apartments" class="visually-hidden">
+                    <input class="visually-hidden dwelling-input" type="radio" name="dwelling-type" value="apartments">
                     <span>Апартаменты</span>
                   </label>
                 </li>
@@ -125,13 +125,13 @@
               <div class="price-sorting">
                 <div class="label-container label-container-left">
                   <label>
-                    <input type="text" name="min-price" placeholder="0">
+                    <input class="price-input" type="text" name="min-price" placeholder="0">
                   </label>
                   <span>от</span>
                 </div>
-                <div class="label-container">
+                <div class="label-container label-container-right">
                   <label>
-                    <input type="text" name="max-price" placeholder="9000">
+                    <input class="price-input" type="text" name="max-price" placeholder="9000">
                   </label>
                   <span>до</span>
                 </div>
@@ -151,7 +151,7 @@
             </fieldset>
             <div class="form-btns">
               <button class="button apply" type="submit">Применить</button>
-              <button class="reset" type="reset">Сбросить</button>
+              <button class="reset button" type="reset">Сбросить</button>
             </div>
           </form>
         </div>
@@ -160,12 +160,12 @@
             <p class="hotels-found">Найдено гостиниц: 38</p>
             <form class="sorting-type sorting-hotel-type dark-text">
               <label for="sorting" class="visually-hidden">Сортировка</label>
-              <select id="sorting" name="sorting">
+              <select id="sorting" name="sorting" class="hotel-criterion">
                 <option value="cheap">Сначала дешёвые</option>
                 <option value="expensive">Сначала дорогие</option>
                 <option value="popular">Сначала популярные</option>
               </select>
-              <button type="submit" class="visually-hidden">Отсортировать гостиницы</button>
+              <button type="submit" class="visually-hidden button">Отсортировать гостиницы</button>
             </form>
             <div class="show-div">
               <a href="#" class="show clear-underline">
@@ -295,7 +295,7 @@
             </li>
           </ul>
           <p class="blue-btn load">
-            <a class="clear-underline" href="#">Загрузить ещё</a>
+            <a class="load-link clear-underline" href="#">Загрузить ещё</a>
           </p>
           <div class="bottom-catalog">
             <ul class="pagination clear-list">
@@ -320,7 +320,7 @@
             </ul>
             <form class="sorting-type dark-text number-of-hotels">
               <label for="quantity-sorting" class="number-text">Гостиниц на странице</label>
-              <select id="quantity-sorting" name="quantity-sorting">
+              <select id="quantity-sorting" name="quantity-sorting" class="quantity-sorting">
                 <option value="4">4</option>
                 <option value="10">10</option>
                 <option value="20">20</option>
@@ -330,14 +330,12 @@
           </div>
         </section>
         <section class="subscribe subscribe-catalog">
-          <h2 class="subscribe-h subscribe-catalog-h">Подпишитесь на рассылку</h2>
-          <p class="subscribe-p subscribe-catalog-p">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+          <h2 class="subscribe-header subscribe-catalog-header">Подпишитесь на рассылку</h2>
+          <p class="subscribe-paragraph subscribe-catalog-paragraph">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="div-flex">
               <input type="email" class="user-email" name="user-email" placeholder="Ваш e-mail" required>
-              <button class="subscribe-button blue-btn sedona-decorative-btn" type="submit">
-                Подписаться
-              </button>
+              <button class="subscribe-button blue-btn sedona-decorative-btn" type="submit">Подписаться</button>
             </div>
           </form>
         </section>
@@ -346,7 +344,7 @@
         <section class="footer-social">
           <h2 class="visually-hidden">Давайте дружить</h2>
           <ul class="footer-social-list clear-list">
-            <li class="footer-social-item clear-list">
+            <li class="footer-social-item">
               <a class="button social-btn twitter" href="https://twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">Твиттер</span>
                 <svg width="18" height="15" xmlns="http://www.w3.org/2000/svg">
@@ -354,7 +352,7 @@
                 </svg>
               </a>
             </li>
-            <li class="footer-social-item clear-list">
+            <li class="footer-social-item">
               <a class="button social-btn facebook" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Фэйсбук</span>
                 <svg width="10" height="18" xmlns="http://www.w3.org/2000/svg">
@@ -362,7 +360,7 @@
                 </svg>
               </a>
             </li>
-            <li class="footer-social-item clear-list">
+            <li class="footer-social-item">
               <a class="button social-btn youtube" href="https://youtube.com/c/HTMLAcademyRUS">
                 <span class="visually-hidden">Ютуб</span>
                 <svg width="20" height="14" xmlns="http://www.w3.org/2000/svg">
