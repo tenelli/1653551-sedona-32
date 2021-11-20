@@ -12,7 +12,7 @@
         <nav class="navigation">
           <ul class="navigation-list clear-list">
             <li class="navigation-item current-page">
-              <a class="navigation-link clear-underline">Главная</a>
+              <a class="navigation-link clear-underline">Главная</a> <!--ссылка на текущую страницу-->
             </li>
             <li class="navigation-item">
               <a class="navigation-link clear-underline" href="#">О Седоне</a>
@@ -22,7 +22,7 @@
             </li>
           </ul>
         </nav>
-        <a class="logo header-logo">
+        <a class="logo header-logo"> <!--ведёт сама на себя-->
           <img src="img/logo.svg" alt="Логотип сайта о городке Седона." width="138" height="70">
         </a>
         <ul class="user-list clear-list">
@@ -85,7 +85,7 @@
             </a>
           </li>
           <li class="user-item">
-            <a href="#" class="sedona-decorative-btn сlear-underline want-there brown-btn">
+            <a class="sedona-decorative-btn сlear-underline want-there brown-btn" href="#">
               Хочу сюда!
             </a>
           </li>
@@ -96,7 +96,7 @@
           <h1 class="visually-hidden">Городок Седона</h1>
           <img class="welcome" src="img/welcome.svg" width="458" height="354" alt="Приветственное сообщение Седоны.">
         </section>
-        <h2 class="visually-hidden">Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества.</h2>
         <p class="heading town">Седона — небольшой городок в Аризоне,<br>
           заслуживающий большего!</p>
         <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -150,14 +150,15 @@
         <section class="hotel-search">
           <h2 class="heading interest">Заинтересовались?</h2>
           <p class="suggestions">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a href="catalog.html" class="search-btn clear-underline">Поиск гостиницы в Седоне</a>
+          <a class="search-btn clear-underline" href="catalog.html">Поиск гостиницы в Седоне</a>
         </section>
         <section class="subscribe subscribe-index">
           <h2 class="subscribe-header">Подпишитесь на рассылку</h2>
           <p class="subscribe-paragraph">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="div-flex">
-              <input type="email" name="user-email" class="user-email" placeholder="Ваш e-mail" required>
+              <label class="visually-hidden" for="subscribe-email">Email.</label>
+              <input class="user-email" id="subscribe-email" type="email" name="user-email" placeholder="Ваш e-mail" required>
               <button class="subscribe-button blue-btn sedona-decorative-btn" type="submit">Подписаться</button>
             </div>
           </form>
